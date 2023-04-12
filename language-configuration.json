@@ -34,13 +34,13 @@
   ],
   "folding": {
     "markers": {
-        "start": "^\\s*\\w*\\(.*\\)\\s*<-.*(?<!;)$",
+        "start": "^\\s*(\\w*\\(.*\\)\\s*<-|(check|allow|deny) if).*(?<!;)$",
         "end": ";"
     }
   },
   "onEnterRules": [
     {
-      "beforeText": "\\s*\\w*\\(.*\\)\\s*<-.*(?<!;)",
+      "beforeText": "\\s*(\\w*\\(.*\\)\\s*<-|(check|allow|deny) if).*(?<!;)$",
       "action": { "indent": "indent" }
     },
     {

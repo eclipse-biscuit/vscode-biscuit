@@ -45,9 +45,6 @@
     "supports": {
       "patterns": [{
         "name": "support.type.biscuit-auth",
-        "match": "^\\s*\\w+"
-      }, {
-        "name": "support.type.biscuit-auth",
         "match": "\\w+\\("
       }]
     },
