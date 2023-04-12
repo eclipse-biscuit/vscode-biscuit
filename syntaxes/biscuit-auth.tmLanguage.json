@@ -78,12 +78,12 @@
     "comments": {
       "patterns": [{
 				"name": "comment.line.double-slash.biscuit-auth",
-        "begin": "^//",
+        "begin": "//.*$",
         "end": "\n"
 			},
       {
         "name": "comment.block.biscuit-auth",
-        "begin": "^/\\*",
+        "begin": "/\\*",
         "end": "\\*/"
       }]
     }
