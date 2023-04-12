@@ -1,0 +1,25 @@
+{
+  "name": "biscuit-auth",
+  "displayName": "biscuit-auth",
+  "description": "Biscuit datalog language support for Visual Studio Code",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.77.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "biscuit-auth",
+      "aliases": ["biscuit auth", "biscuit-auth"],
+      "extensions": [".biscuit-datalog"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "biscuit-auth",
+      "scopeName": "source.biscuit-auth",
+      "path": "./syntaxes/biscuit-auth.tmLanguage.json"
+    }]
+  }
+}

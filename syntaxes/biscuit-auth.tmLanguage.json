@@ -1,0 +1,94 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "biscuit auth",
+  "scopeName": "source.biscuit-auth",
+	"patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+			"include": "#keywords"
+		},
+    {
+      "include": "#supports"
+    },
+    {
+      "include": "#entities"
+    },
+		{
+			"include": "#strings"
+    },
+    {
+      "include": "#variables"
+    },
+    {
+      "include": "#constants"
+    }
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.biscuit-auth",
+				"match": "\\b(allow if|deny if|check if|or|and|<-)\\b"
+			},
+      {
+        "name": "keyword.operator.biscuit-auth",
+        "match": "[-+*\\/=<>!&\\|]+"
+      }]
+		},
+    "entities": {
+      "patterns": [{
+        "name": "entity.name.function.biscuit-auth",
+        "match": "\\.\\w+\\("
+      }]
+    },
+    "supports": {
+      "patterns": [{
+        "name": "support.type.biscuit-auth",
+        "match": "^\\s*\\w+"
+      }, {
+        "name": "support.type.biscuit-auth",
+        "match": "\\w+\\("
+      }]
+    },
+    "variables": {
+      "patterns": [{
+        "name": "variable.parameter.biscuit-auth",
+        "match": "\\$\\w*"
+      }]
+    },
+    "constants": {
+      "patterns": [{
+        "name": "constant.language.biscuit-auth",
+        "match": "(true|false)"
+      },
+      {
+        "name": "constant.numeric.biscuit-auth",
+        "match": "\\d+"
+      }]
+    },
+		"strings": {
+			"name": "string.quoted.double.biscuit-auth",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.biscuit-auth",
+					"match": "\\\\."
+				}
+			]
+		},
+    "comments": {
+      "patterns": [{
+				"name": "comment.line.double-slash.biscuit-auth",
+        "begin": "^//",
+        "end": "\n"
+			},
+      {
+        "name": "comment.block.biscuit-auth",
+        "begin": "^/\\*",
+        "end": "\\*/"
+      }]
+    }
+	}
+}
