@@ -1,8 +1,14 @@
 {
-  "name": "biscuit-auth",
-  "displayName": "biscuit-auth",
+  "name": "vscode-biscuit",
+  "displayName": "Biscuit auth",
   "description": "Biscuit datalog language support for Visual Studio Code",
   "version": "0.0.1",
+  "repository": {
+    "url": "https://github.com/biscuit-auth/vscode-biscuit",
+    "type": "git"
+  },
+  "homepage": "https://www.biscuitsec.org/",
+  "license": "Apache-2.0",
   "engines": {
     "vscode": "^1.77.0"
   },
